@@ -20,38 +20,26 @@ This project contains Terraform configurations to provision AWS infrastructure. 
     ```bash
     terraform init
     ```
-
-    This will initialize the Terraform configuration and download any necessary plugins.
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
+   > [!NOTE]  
+   > This will initialize the Terraform configuration and download any necessary plugins.
 
 3. **Plan the Deployment:**
 
     ```bash
     terraform plan -var-file=variables.tfvars
     ```
-
-    This command will create an execution plan showing the changes that will be made.
+    > [!NOTE]  
+    > This command will create an execution plan showing the changes that will be made.
+    
 
 4. **Apply the Deployment:**
 
     ```bash
     terraform apply -var-file=variables.tfvars
     ```
-
-    This command will apply the changes and provision the AWS resources.
+    > [!NOTE]  
+    > This command will apply the changes and provision the AWS resources.
+    
 
 5. **Cleanup (optional):**
 
@@ -60,13 +48,15 @@ This project contains Terraform configurations to provision AWS infrastructure. 
     ```bash
     terraform destroy -var-file=variables.tfvars
     ```
+    > [!CAUTION]  
+    >  This will remove all the provisioned resources.
 
-    This will remove all the provisioned resources.
+   
 
-## Notes
 
-- Ensure you provide valid AWS credentials in `variables.tfvars` before running Terraform commands.
-- Always exercise caution when running `terraform apply`. Review the execution plan before proceeding.
-- Remember to clean up resources after you're done to avoid incurring unnecessary charges.
+> [!WARNING]  
+> Ensure you provide valid AWS credentials in `variables.tfvars` before running Terraform commands.
+> Always exercise caution when running `terraform apply`. Review the execution plan before proceeding.
+> Remember to clean up resources after you're done to avoid incurring unnecessary charges.
 
 
