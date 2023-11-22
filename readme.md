@@ -22,8 +22,22 @@ This project contains Terraform configurations to provision AWS infrastructure. 
     ```
 
     This will initialize the Terraform configuration and download any necessary plugins.
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
 
-2. **Plan the Deployment:**
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+3. **Plan the Deployment:**
 
     ```bash
     terraform plan -var-file=variables.tfvars
@@ -31,7 +45,7 @@ This project contains Terraform configurations to provision AWS infrastructure. 
 
     This command will create an execution plan showing the changes that will be made.
 
-3. **Apply the Deployment:**
+4. **Apply the Deployment:**
 
     ```bash
     terraform apply -var-file=variables.tfvars
@@ -39,7 +53,7 @@ This project contains Terraform configurations to provision AWS infrastructure. 
 
     This command will apply the changes and provision the AWS resources.
 
-4. **Cleanup (optional):**
+5. **Cleanup (optional):**
 
     If you want to destroy the resources created by Terraform, run:
 
