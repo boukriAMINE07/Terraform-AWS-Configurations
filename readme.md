@@ -20,16 +20,16 @@ This project contains Terraform configurations to provision AWS infrastructure. 
     ```bash
     terraform init
     ```
-   > [!NOTE]  
-   > This will initialize the Terraform configuration and download any necessary plugins.
+> [!NOTE]  
+> This will initialize the Terraform configuration and download any necessary plugins.
 
 3. **Plan the Deployment:**
 
     ```bash
     terraform plan -var-file=variables.tfvars
     ```
-    > [!NOTE]  
-    > This command will create an execution plan showing the changes that will be made.
+> [!NOTE]  
+> This command will create an execution plan showing the changes that will be made.
     
 
 4. **Apply the Deployment:**
@@ -37,8 +37,8 @@ This project contains Terraform configurations to provision AWS infrastructure. 
     ```bash
     terraform apply -var-file=variables.tfvars
     ```
-    > [!NOTE]  
-    > This command will apply the changes and provision the AWS resources.
+> [!NOTE]  
+> This command will apply the changes and provision the AWS resources.
     
 
 5. **Cleanup (optional):**
@@ -48,8 +48,8 @@ This project contains Terraform configurations to provision AWS infrastructure. 
     ```bash
     terraform destroy -var-file=variables.tfvars
     ```
-    > [!CAUTION]  
-    >  This will remove all the provisioned resources.
+> [!CAUTION]  
+>  This will remove all the provisioned resources.
 
    
 
