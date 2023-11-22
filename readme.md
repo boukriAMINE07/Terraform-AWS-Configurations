@@ -56,7 +56,9 @@ This project contains Terraform configurations to provision AWS infrastructure. 
 
 > [!WARNING]  
 > Ensure you provide valid AWS credentials in `variables.tfvars` before running Terraform commands.
+> 
 > Always exercise caution when running `terraform apply`. Review the execution plan before proceeding.
+> 
 > Remember to clean up resources after you're done to avoid incurring unnecessary charges.
 
 
